@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,67 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vH-5T-zx2">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPg-zh-frJ">
+                                        <color key="tintColor" red="1" green="0.20000000000000001" blue="0.87193267620000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.50196078430000002" green="0.70980392160000005" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V13-m1-L65">
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gR7-MT-pBF"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2q9-wN-WXx">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4rN-5v-21c"/>
+                                            <constraint firstAttribute="width" constant="50" id="H33-Gq-i1h"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8C-KS-l3E">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="H6h-pM-dWd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0d6-f0-te9"/>
+                                    <constraint firstItem="w8C-KS-l3E" firstAttribute="leading" secondItem="9vH-5T-zx2" secondAttribute="leading" constant="24" id="1AY-D1-Pv4"/>
+                                    <constraint firstItem="V13-m1-L65" firstAttribute="centerX" secondItem="9vH-5T-zx2" secondAttribute="centerX" id="1n9-8m-6dy"/>
+                                    <constraint firstItem="2q9-wN-WXx" firstAttribute="centerY" secondItem="9vH-5T-zx2" secondAttribute="centerY" id="3z6-yg-ELx"/>
+                                    <constraint firstItem="w8C-KS-l3E" firstAttribute="centerY" secondItem="9vH-5T-zx2" secondAttribute="centerY" id="LzO-55-7De"/>
+                                    <constraint firstItem="2q9-wN-WXx" firstAttribute="centerX" secondItem="9vH-5T-zx2" secondAttribute="centerX" id="XUv-bW-plG"/>
+                                    <constraint firstItem="V13-m1-L65" firstAttribute="top" secondItem="9vH-5T-zx2" secondAttribute="top" constant="20" id="gr6-7L-Jfe"/>
+                                    <constraint firstItem="dPg-zh-frJ" firstAttribute="centerX" secondItem="9vH-5T-zx2" secondAttribute="centerX" id="jsL-gT-BTr"/>
+                                    <constraint firstAttribute="bottom" secondItem="dPg-zh-frJ" secondAttribute="bottom" constant="20" id="s7n-Xz-Gyx"/>
+                                    <constraint firstItem="2q9-wN-WXx" firstAttribute="leading" secondItem="w8C-KS-l3E" secondAttribute="trailing" constant="19" id="t12-ax-HN6"/>
+                                    <constraint firstAttribute="height" constant="240" id="vD8-5f-l8v"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9vH-5T-zx2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ly4-Xl-NeG"/>
+                            <constraint firstItem="9vH-5T-zx2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OG2-mp-SgW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn" destination="V13-m1-L65" id="pXV-ya-QxT"/>
+                        <outlet property="colorView" destination="9vH-5T-zx2" id="H2t-nD-2Gc"/>
+                        <outlet property="label" destination="dPg-zh-frJ" id="oOc-Ph-oxv"/>
+                        <outlet property="subView" destination="w8C-KS-l3E" id="gm3-Mz-Rpq"/>
+                        <outlet property="tinImageView" destination="2q9-wN-WXx" id="eVr-La-pxk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="42.728635682158924"/>
         </scene>
     </scenes>
 </document>

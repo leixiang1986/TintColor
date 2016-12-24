@@ -6,6 +6,7 @@
 //  Copyright © 2016年 leixiang. All rights reserved.
 //
 
+//https://www.shinobicontrols.com/blog/ios7-day-by-day-day-6-tint-color
 #import "ViewController.h"
 
 @interface ViewController ()
